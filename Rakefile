@@ -4,8 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-<<<<<<< HEAD
 Mathieusaury::Application.load_tasks
-=======
-Blog::Application.load_tasks
->>>>>>> 30a11ba8b109b81948b0c0a8a53a2ffe5e2b2799
