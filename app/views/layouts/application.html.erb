@@ -5,11 +5,44 @@
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+ 
+
 </head>
 
-<div class="container">
-<%= yield %>
-</div>
+<body>
+	
+	<div class="topbar">
+		<div class="fill">
+	  		<div class="container">
+	  			<h3><a href="/">DrItZz</a></h3>
+	  			<ul>
+	     			<li class="active"><a href="#">Home</a></li>
+	      			<li><%=  %></li>
+	      			<li><a href="#contact">Contact</a></li>
+	    		</ul>
+	    		<form action= "">	
+	    			<input type="text" placeholder="Research an article" />
+	    		</form>
+	    		<ul class="nav secondary-nav">
+	    			<li>
+	    				<a href="#" class="menu">Se Connecter</a>
+	    				<ul class="menu-dropdown">
+	    					<li><input type="text" placeholder="Username" /></li>
+	    					<li><input type="text" placeholder="Password" /></li>
+	    				</ul>
+	    			</li>
+	    		</ul>
+  			</div>
+		</div>
+	</div>	
+	  				
+	   			
+	<div class="container">
+		<%= yield  %>
+	</div>
 
 </body>
+
+
 </html>

@@ -1,10 +1,61 @@
-<h1>Listing posts</h1>
+<div class="hero-unit">
+	<h1>All you always wanted to know about Winter Sports</h1>
+	<p>Hi and welcome on blog. My name is Mathieu Saury, I am a French engineer living in New York, currently looking for a position as a Ruby on Rails developer.</p>
+	<p><a href="" class="btn primary large">Find out more</a></p>
+</div>
 
-<table>
+
+
+<div class="row">
+	<div class="span6">
+		<h2>Title1</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
+	</div>	
+	
+	<div class="span5">
+		<h2>Title2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
+	</div>
+	
+	<div class="span5">
+		<h2>Title3</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad m est laborum.</p>
+	</div>	
+</div><br /><br />
+	
+<div class="row">
+	<div class="span11">
+		<div class="page-header">
+			<h1>Actuality <small>Stay tuned</small></h1>
+			<p>
+				<img src="http://lorempixum.com/640/200/sports" alt="" />
+			</p>
+			<blockquote>
+				<p>"What does not kill us makes us stronger!"</p>
+				<small>Friedrich Nietzsche</small>
+			</blockquote>			
+		</div>
+	</div>		
+	
+	<div class="span5">
+		<h2>Sidebar</h2>
+		<ul class="tabs">
+			<li class="active"><a href="#">Last news</a></li>
+			<li><a href="#">Top news</a></li>
+		</ul>
+		<ul>
+			<li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut datat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></li>
+		</ul>
+	</div>	
+</div>
+		
+
+<h1>Listing posts <small>Share your experience</small></h1>		
+<table class="zebra-striped" id="sortTableExample">
   <tr>
-    <th>Name</th>
-    <th>Title</th>
-    <th>Content</th>
+    <th class="yellow">Name</th>
+    <th class="blue">Title</th>
+    <th class="green">Content</th>
     <th></th>
     <th></th>
     <th></th>
@@ -22,6 +73,35 @@
 <% end %>
 </table>
 
-<br />
 
-<%= link_to 'New Post', new_post_path %>
+<br />
+<%= link_to 'New Post', new_post_path, :class => "btn primary large"%>
+
+
+<div class="row">
+	<div class="span3">
+	</div>
+	
+	<div class="span6 offset5" >
+		<div class="pagination">
+			<ul>
+				<li class="prev disabled"><a href="#">&lArr; Previous</a></li>
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li class="next"><a href="#">Next &rArr;</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="span2">
+	</div>
+</div>
+
+<script type="text/javascript">
+  $(function() {
+    $("table#sortTableExample").tablesorter({ sortList: [[1,0]] });
+  });
+</script>
+
