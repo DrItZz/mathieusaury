@@ -10,8 +10,7 @@
  *
  *= require_self
  *= require_tree .
- *= require bootstrap
-*/
+ */
 
 body {
   padding-top: 50px;

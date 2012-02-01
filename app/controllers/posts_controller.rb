@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+ 
   # GET /posts
   # GET /posts.json
   def index
@@ -8,7 +9,6 @@ class PostsController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @posts }
       format.xml  { render :xml => @posts }
-      format.js
     end
   end
 
