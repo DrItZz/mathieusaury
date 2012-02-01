@@ -3,7 +3,7 @@
 <head>
   <title>Mathieusaury</title>
   <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "tablesorter", "application" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
 
@@ -20,9 +20,10 @@
 	  		<div class="container">
 	  			<h3><a href="/">DrItZz</a></h3>
 	  			<ul>
-	     			<li class="active"><a href="#">Home</a></li>
+	     			<li class="active"><a href="/">Home</a></li>
 	      			<li><%=  %></li>
-	      			<li><a href="#contact">Contact</a></li>
+	     			<li><%= link_to 'Contact', Contact %></li>
+
 	    		</ul>
 	    		<form action= "">	
 	    			<input type="text" placeholder="Research an article" />
