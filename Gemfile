@@ -33,6 +33,7 @@ gem 'jquery-rails'
 gem 'nestful'
 gem 'css-bootstrap-rails'
 gem 'heroku'
+gem 'rss'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
